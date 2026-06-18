@@ -27,3 +27,6 @@ Get a key from [Google AI Studio](https://aistudio.google.com/app/apikey).
 ### 2. Configure the backend
 
 Create a `.env` file next to `api.py` and paste in your key:
+
+## Live Demo
+https://academicchatbotniki.netlify.app
