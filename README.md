@@ -59,9 +59,3 @@ git add README.md
 git commit -m "Add live demo link"
 git push
 
-## Live Demo
-Frontend:
-https://academicchatbotniki.netlify.app
-
-Backend API:
-https://academicadvisorchatbot.onrender.com
