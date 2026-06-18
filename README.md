@@ -16,7 +16,7 @@ A web-based chatbot that helps Rowan University students with course selection, 
 - `index.html` + `app.js` — React frontend (no build step, loaded via CDN scripts)
 - `api.py` — Flask backend that proxies chat requests to the Gemini API using your server-side API key
 
-The frontend never talks to Google directly; it calls your local Flask server at `http://127.0.0.1:5001/api/chat`, which forwards the request to Gemini using the key from your `.env` file.
+The frontend never talks to Google directly; it calls your local Flask server at `http://127.0.0.1:10000/api/chat`, which forwards the request to Gemini using the key from your `.env` file.
 
 ## 🧠 System Architecture
 
@@ -55,7 +55,5 @@ Get a key from [Google AI Studio](https://aistudio.google.com/app/apikey).
 
 Create a `.env` file next to `api.py` and paste in your key:
 
-git add README.md
-git commit -m "Add live demo link"
-git push
+
 
