@@ -19,6 +19,7 @@ app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
         "origins": [
+            "https://academicchatbotniki.netlify.app",
             "http://localhost:8000",
             "http://127.0.0.1:8000",
             "http://localhost:8080",
@@ -28,7 +29,7 @@ CORS(app, resources={
     }
 }) 
 
-@app.route('/api/chat', methods=['POST'])
+@app.route('/api/chat', methods=['POST', 'OPTIONS'])
 def chat_proxy():
     try:
         data = request.json
