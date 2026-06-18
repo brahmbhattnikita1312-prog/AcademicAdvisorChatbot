@@ -144,7 +144,7 @@ ADVISING STYLE:
       }
 
       // Call Backend Proxy Server
-      const response = await fetch('https://academicadvisorchatbot.onrender.com/api/chat', {
+      const response = await fetch('http://localhost:10000/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
