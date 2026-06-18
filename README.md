@@ -18,6 +18,33 @@ A web-based chatbot that helps Rowan University students with course selection, 
 
 The frontend never talks to Google directly; it calls your local Flask server at `http://127.0.0.1:5001/api/chat`, which forwards the request to Gemini using the key from your `.env` file.
 
+## 🧠 System Architecture
+
+User Input (Frontend)
+        ↓
+Flask Backend (API Proxy)
+        ↓
+Google Gemini API
+        ↓
+AI Response returned to UI
+
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- HTML
+- JavaScript
+- Tailwind CSS
+
+**Backend:**
+- Python
+- Flask
+- Flask-CORS
+
+**AI:**
+- Google Gemini API
+
+
 ## Setup
 
 ### 1. Get a Gemini API key
@@ -27,6 +54,10 @@ Get a key from [Google AI Studio](https://aistudio.google.com/app/apikey).
 ### 2. Configure the backend
 
 Create a `.env` file next to `api.py` and paste in your key:
+
+git add README.md
+git commit -m "Add live demo link"
+git push
 
 ## Live Demo
 https://academicchatbotniki.netlify.app
